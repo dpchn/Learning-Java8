@@ -20,12 +20,11 @@ public class A {
 	}
 	
 	
-	
 	interface MathOp{
 		public int operation(int a, int b);
 	}
 	
-	public int operate( int a, int b, MathOp op) {
+	public int operate( int a, int b, MathOp op){
 		return op.operation(a, b);
 	}
 }
