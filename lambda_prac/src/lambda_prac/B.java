@@ -21,10 +21,10 @@ class employee
 
 public class B {
 
-	public static int compareById(employee o1, employee o2)
-	{
-		return o1.id.compareTo(o2.id);
-	}
+//	public static int compareById(employee o1, employee o2)
+//	{
+//		return o1.id.compareTo(o2.id);
+//	}
 	
    public static void main(String args[]) {
 	
@@ -42,7 +42,6 @@ public class B {
 				return o1.name.compareTo(o2.name);
 			}   
 	   });*/
-	   
 	   
 	   
 	   Collections.sort(employees, B::compareById);
