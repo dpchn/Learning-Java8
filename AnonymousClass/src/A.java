@@ -12,6 +12,8 @@ public class A {
 			}
 		};
 		
+		abstractCLass.fun();
+		
 		/*
 		 * Interface Implementation using Anonymous class
 		 */
@@ -79,4 +81,5 @@ interface Interface1{
 @FunctionalInterface
 interface FunctionalInterface1{
 	int sum(int a, int b);
+
 }

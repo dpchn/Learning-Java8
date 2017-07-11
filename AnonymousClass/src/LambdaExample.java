@@ -22,6 +22,7 @@ public class LambdaExample {
 		
 		System.out.println(a+" Is prime : "+isPrimeLambda(a));
 		
+		
 	}
 	
 	

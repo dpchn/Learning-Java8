@@ -17,9 +17,10 @@ interface C extends A {
 	}
 }
 
-interface D extends B, C {
-	default void test() {
-		System.out.println("In interface D");
+class D implements B, C {
+	 public void test() {
+		C.super.test();
+		
 	}
 }
 

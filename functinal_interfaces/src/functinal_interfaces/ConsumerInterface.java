@@ -11,12 +11,19 @@ public class ConsumerInterface {
 	
 	public static void main(String[] args) {
 		
-		List<student_detail> stuList = new ArrayList<>(Arrays.asList(
+	/*	List<student_detail> stuList = new ArrayList<>(Arrays.asList(
 				new student_detail(10, "arun"),
 				new student_detail(9, "durga"),
 				new student_detail(8, "ashish"),
 				new student_detail(11, "someone")
 		));
+		*/
+		List<student_detail> stuList = new ArrayList<>();
+		stuList.add(new student_detail(10, "arun"));
+		stuList.add(new student_detail(9, "durga"));
+		stuList.add(new student_detail(8, "ashish"));
+		stuList.add(new student_detail(10, "arun"));
+		stuList.add(new student_detail(10, "arun"));
 		
 		Consumer<List<student_detail>> nameFilter = (t) -> {
 			Iterator<student_detail> iterator = t.iterator();

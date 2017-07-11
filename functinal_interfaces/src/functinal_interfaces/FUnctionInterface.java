@@ -40,9 +40,14 @@ public class FUnctionInterface {
 		show(li, x -> x.name.toLowerCase());
 		
 		
+		
 	}
 	
 	static void show(List<check> li, Function<check, String> e) {
+		for(check x:li)
+			System.out.println("Before :"+x.name+"  After "+e.apply(x));
+	}
+	static void show1(List<check> li, Function<check, String> e) {
 		for(check x:li)
 			System.out.println("Before :"+x.name+"  After "+e.apply(x));
 	}

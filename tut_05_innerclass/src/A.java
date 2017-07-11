@@ -1,5 +1,7 @@
 
 public class A {
+	private static final String B = null;
+
 	public void name() {
 		System.out.println("class Outter class");	
 	}
@@ -17,6 +19,7 @@ public class A {
 		b.name();
 		
 		A.B.C c = b.new C();
+
 		c.fun();
 	}
 	
@@ -40,7 +43,17 @@ public class A {
 				System.out.println("Innner class can acces variable og outer class "+variableB);
 			}
 		}
+		
+
 	}
+	static class D{
+		void test() {
+			
+		}
+		
+	}
+	
+
 	
 
 }
